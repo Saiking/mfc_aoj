@@ -183,8 +183,10 @@ void CAOJ_MFCDlg::OnBnClickedButton1()
 void CAOJ_MFCDlg::OnBnClickedButton2()
 {
 	// TODO: ここにコントロール通知ハンドラー コードを追加します。
-	string ss=input2string(m_edit2);
-	UseCase::CaseOver::inputCircle(ss,circle);
+	string ss=input2string(m_editRect);
+	UseCase::CaseOver::inputRect(ss,rect);
+	string ss2=input2string(m_edit2);
+	UseCase::CaseOver::inputCircle(ss2,circle);
 	string sd=UseCase::CaseOver::hanteiCircle(rect,circle);
 	string2display(sd,m_edit4);
 
@@ -194,8 +196,10 @@ void CAOJ_MFCDlg::OnBnClickedButton2()
 void CAOJ_MFCDlg::OnBnClickedButton3()
 {
 	// TODO: ここにコントロール通知ハンドラー コードを追加します。
-		string ss=input2string(m_edit3);
-	UseCase::CaseOver::inputSquare(ss,square);
+	string ss=input2string(m_editRect);
+	UseCase::CaseOver::inputRect(ss,rect);
+	string ss2=input2string(m_edit3);
+	UseCase::CaseOver::inputSquare(ss2,square);
 	string sd=UseCase::CaseOver::hanteiSquare(rect,square);
 	string2display(sd,m_edit4);
 }
